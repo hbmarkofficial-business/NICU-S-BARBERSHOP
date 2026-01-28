@@ -4,16 +4,16 @@ import { Footer } from '@/components/Footer';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, MapPin, Phone, Mail, Clock, MessageCircle, Calendar, Search } from 'lucide-react';
+import { ChevronRight, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
     <>
       <Helmet>
         <title>Kontakt & Termin | Lord Barbershop Coiffeur</title>
-        <meta 
-          name="description" 
-          content="Kontaktieren Sie Lord Barbershop Coiffeur in Nürnberg. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-19 Uhr und Sa 09-18 Uhr." 
+        <meta
+          name="description"
+          content="Kontaktieren Sie Lord Barbershop Coiffeur in Nürnberg. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-19 Uhr und Sa 09-18 Uhr."
         />
         <link rel="canonical" href="https://gentlemanscut.de/kontakt" />
         <script type="application/ld+json">
@@ -66,8 +66,13 @@ const Contact = () => {
         {/* Hero */}
         <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-dark">
           <div className="container mx-auto px-4">
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8" aria-label="Breadcrumb">
-              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+            <nav
+              className="flex items-center gap-2 text-sm text-muted-foreground mb-8"
+              aria-label="Breadcrumb"
+            >
+              <Link to="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-foreground">Kontakt</span>
             </nav>
@@ -81,7 +86,7 @@ const Contact = () => {
               </h1>
               <div className="section-divider mb-6" style={{ marginLeft: 0 }} />
               <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-                Haben Sie Fragen oder möchten Sie einen Termin vereinbaren? 
+                Haben Sie Fragen oder möchten Sie einen Termin vereinbaren?
                 Nutzen Sie unseren Chatbot oder rufen Sie uns direkt an.
               </p>
             </AnimateOnScroll>
@@ -104,7 +109,7 @@ const Contact = () => {
                   </h2>
 
                   <p className="text-muted-foreground mb-8 leading-relaxed">
-                    Unser Chatbot steht Ihnen rund um die Uhr zur Verfügung. 
+                    Unser Chatbot steht Ihnen rund um die Uhr zur Verfügung.
                     Buchen Sie bequem Ihren Termin oder erhalten Sie individuelle Empfehlungen.
                   </p>
 
@@ -131,7 +136,7 @@ const Contact = () => {
 
                   <div className="aspect-video rounded-sm overflow-hidden border border-border">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.0466369434594!2d11.117062376893147!3d49.464733457845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57dec87eba7f%3A0xac674ba124944238!2sLord%20Barbershop%20Coiffeur!5e0!3m2!1sde!2sde!4v1769174581720!5m2!1sde!2sde"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.67619631552!2d11.046011076891736!3d49.43393546003119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f56e4046e3933%3A0xb8ae596adde163d3!2sSchweinauer%20Hauptstra%C3%9Fe%2025%2C%2090441%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1769610242201!5m2!1sde!2sde"
                       width="100%"
                       height="100%"
                       style={{ border: 0, filter: 'grayscale(100%) contrast(1.2)' }}
@@ -154,6 +159,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
